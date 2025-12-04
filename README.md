@@ -59,4 +59,14 @@ All game objects inherit from `CircleShape`, which provides collision detection 
 - **Python 3**
 - **Pygame**
 - **Boot.dev course structure**
-- `pygame.sprite.Group` architecture for object ma
+- `pygame.sprite.Group` architecture for object management  
+
+---
+
+## 📦 Installation & Running the Game
+
+```bash
+git clone https://github.com/zagos09/asteroids
+cd asteroids
+uv sync   # or pip install -r requirements.txt if you prefer
+uv run main.py
