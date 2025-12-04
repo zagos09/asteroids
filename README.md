@@ -71,6 +71,7 @@ cd asteroids
 
 uv sync    # or pip install -r requirements.txt
 uv run main.py
+```
 
 
 📘 Lessons Learned
