@@ -1,111 +1,49 @@
-# 🚀 Asteroids  
-### A classic arcade-style shooter built in Python & Pygame
+# 🚀 Asteroids - Python Arcade Game
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square)
-![Pygame](https://img.shields.io/badge/Pygame-2.5-green?style=flat-square)
-![Status](https://img.shields.io/badge/Project-Complete-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+A classic space shooter game built with **Python** and **Pygame**.
+This project was developed as part of the Boot.dev backend engineering curriculum to practice **Object-Oriented Programming (OOP)**, game loop logic, and collision detection.
 
----
-
-## ⭐ Features
-
-- Player-controlled spaceship with rotation and movement  
-- Shooting mechanic with cooldown system  
-- Asteroids that split into smaller, faster pieces  
-- Collision detection between player, shots, and asteroids  
-- Randomized asteroid field generation  
-- Smooth movement using delta time  
-- Clean update/draw architecture using `pygame.sprite.Group`
-
----
-
-## 🎮 Gameplay Controls
-
-| Key | Action |
-|-----|--------|
-| **W** | Move forward |
-| **S** | Move backward |
-| **A / D** | Rotate left / right |
-| **SPACE** | Shoot |
-
----
-
-## 🧠 How It Works
-
-The game uses several Python classes:
-
-### `Player`
-Handles movement, rotation, shooting, and cooldown logic.
-
-### `Asteroid`
-Moves freely in space and splits into smaller asteroids when hit.
-
-### `Shot`
-Bullets fired by the player with their own velocity and lifetime.
-
-### `AsteroidField`
-Handles the random spawning of asteroids.
-
-### `Logger`
-Records game events in `game_events.jsonl`.
-
-All game objects inherit from `CircleShape`, which provides collision detection and positional logic.
-
----
-
-## 🛠 Tech Stack
-
-- **Python 3**  
-- **Pygame**  
-- **Boot.dev course structure**  
-- `pygame.sprite.Group` architecture for object management  
-
----
-
-## 🔧 Installation & Running the Game
-
-```bash
-git clone https://github.com/zagos09/asteroids
-cd asteroids
-
-uv sync    # or pip install -r requirements.txt
-uv run main.py
-```
+<img width="682" height="388" alt="asteroid_real" src="https://github.com/user-attachments/assets/ee62b84c-2ec6-46a9-bba2-af66690b2be4" />
 
 
-📘 Lessons Learned
 
-While building this project I learned:
+## 🎮 Features
+* **Player Movement:** Smooth rotation and acceleration mechanics using vector math.
+* **Shooting System:** Projectile management with cooldowns and range limits.
+* **Asteroid Logic:** Random generation and splitting mechanics (Large -> Medium -> Small).
+* **Collision Detection:** Circle-based collision logic for high performance.
+* **Game Loop:** Custom-built game loop managing updates and drawing.
 
-How to structure a small game using object-oriented programming
+## 🛠️ Tech Stack
+* **Language:** Python 3
+* **Library:** Pygame
 
-How delta time affects smooth movement in games
+## 🚀 How to Run Locally
 
-How to use sprite groups for clean game loops
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/zagos09/asteroids.git](https://github.com/zagos09/asteroids.git)
+    cd asteroids
+    ```
 
-Collision detection using simple geometric classes
+2.  **Create a Virtual Environment (Optional but Recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    ```
 
-Managing multiple interacting objects (player, shots, asteroids)
+3.  **Install dependencies:**
+    ```bash
+    pip install pygame
+    ```
 
-Using Python logging for event tracking
+4.  **Start the game:**
+    ```bash
+    python main.py
+    ```
 
-This project significantly improved my understanding of Python and game architecture.
-
-💡 Future Improvements
-
- Add score system
-
- Add multiple lives & respawn
-
- Add screen wrapping
-
- Add particle explosion effects
-
- Add power-ups (shield, rapid fire, bombs)
-
- Add starfield background
-
- Add game-over screen
-
- Add sound effects
+## 🕹️ Controls
+* **W / Up Arrow:** Accelerate
+* **A / Left Arrow:** Rotate Left
+* **D / Right Arrow:** Rotate Right
+* **Space:** Shoot
